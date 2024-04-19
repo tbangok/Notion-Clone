@@ -27,9 +27,12 @@ import {
 } from "@/components/ui/popover";
 import { TrashBox } from "./trash-box";
 import { useSearch } from "@/hooks/use-search";
+import { useSettings } from "@/hooks/use-setting";
 
 export const Navigation = () => {
   const search = useSearch();
+  const settings = useSettings()
+
   const pathname = usePathname();
   const isMobile = useMediaQuery("(max-width:768px)");
   const create = useMutation(api.documents.create);
@@ -126,7 +129,7 @@ export const Navigation = () => {
       <aside
         ref={sidebarRef}
         className={cn(
-          "group/sidebar h-full bg-secondary overflow-y-auto relative flex w-60 flex-col z-[99999]",
+          "group/sidebar h-full bg-secondary overflow-y-auto relative flex w-60 flex-col z-[9999]",
           isResetting && "transition-all ease-in-out duration-300",
           isMobile && "w-0"
         )}
@@ -144,7 +147,7 @@ export const Navigation = () => {
         <div>
           <UserItem />
           <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
-          <Item label="Setting" icon={Settings} onClick={() => {}} />
+          <Item label="Setting" icon={Settings} onClick={settings.onOpen} />
           <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
         </div>
         <div className="mt-4">
