@@ -42,7 +42,7 @@ export const SearchCommand = () => {
     return () =>  document.removeEventListener('keydown', down)
    }, [toggle]);
 
-  const onSelect = (is: string) => {
+  const onSelect = (id: string) => {
     router.push(`/documents/${id}`);
     onClose();
   };
