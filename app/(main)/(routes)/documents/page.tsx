@@ -46,7 +46,7 @@ const DocumentsPage = () => {
       />
 
       <h2 className="text-lg font-medium">
-        Welcome to {user?.firstName}&apos;s Notion
+        Welcome to {user?.firstName}&apos;s Memox
       </h2>
 
       <Button onClick={onCreate}>

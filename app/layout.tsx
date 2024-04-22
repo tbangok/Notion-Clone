@@ -13,14 +13,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Notion",
+  title: "Memox",
   description: "The connected workspace where better, faster work happens",
   icons: {
     icon: [
       {
         media: "(prefers-color-scheme:light)",
-        url: "/logo.svg",
-        href: "/logo.svg",
+        url: "/logo.png",
+        href: "/logo.png",
       },
       {
         media: "(prefers-color-scheme:dark)",
