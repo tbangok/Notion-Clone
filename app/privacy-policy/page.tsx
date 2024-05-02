@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
           </li>
         </ul>
 
-        <h2 className="font-bold mt-8">6. Children's Privacy</h2>
+        <h2 className="font-bold mt-8">6. Children&apos;s Privacy</h2>
         <p className="mt-4">
           Memox does not knowingly collect or solicit any information from
           anyone under the age of 13. If we learn that we have collected

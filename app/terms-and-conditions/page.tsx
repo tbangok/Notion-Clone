@@ -12,7 +12,7 @@ const TermsAndConditions: React.FC = () => {
       <div className="max-w-4xl">
         <p>
           Welcome to Memox! These terms and conditions outline the rules and
-          regulations for the use of Memox's app.
+          regulations for the use of Memox&apos;s app.
         </p>
         <p>
           By accessing this app we assume you accept these terms and conditions.
